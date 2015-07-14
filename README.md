@@ -10,3 +10,9 @@ See [Security](Security.md)
 The tools to install at our servers.
 
 See [Installation](Installation.md)
+
+
+## Scripts
+Useful scripts for the setup.
+
+See files under the `scripts` directory.
