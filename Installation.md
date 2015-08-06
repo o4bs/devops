@@ -2,9 +2,9 @@
 
 ### docker
 
-You may need to install the bridge-utils first.
+You may need to install the bridge-utils and apparmor first.
 ```sh
-sudo aptitude install bridge-utils
+sudo aptitude install bridge-utils apparmor -y
 ```
 
 ```sh
