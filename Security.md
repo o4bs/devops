@@ -15,6 +15,7 @@ Merge this part into your iptables rules.
 :INPUT ACCEPT [0:0]
 :FORWARD ACCEPT [0:0]
 :OUTPUT ACCEPT [0:0]
+-A INPUT -p udp --sport 53 -j ACCEPT
 -A INPUT -p udp -j DROP
 -A INPUT -i lo -j ACCEPT
 -A INPUT -d 127.0.0.0/8 -i !lo -j REJECT --reject-with icmp-port-unreachable
