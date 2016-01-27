@@ -10,6 +10,12 @@ sudo aptitude install bridge-utils apparmor -y
 ```sh
 wget -qO- https://get.docker.com/ | sh
 ```
+
+After installation, add user into the docker group.
+```sh
+sudo usermod -aG docker user
+```
+
 More details, see [official documentation](https://docs.docker.com/installation/ubuntulinux/)
 
 If no available IP range is found, then find one and set manually
