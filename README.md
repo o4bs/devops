@@ -18,7 +18,14 @@ Useful scripts for the setup.
 
 See files under the `scripts` directory.
 
-## Docker Compose templates
-The template files for docker-compose to start the application containers.
+[start mongo express](scripts/start_mongo_express.sh): Will start a mongo web UI and listen to http://localhost:8081.
 
-See files under the `docker-compose-files` directory.
+
+### cron files
+
+Put under /etc/cron.d/
+
+[mtm_deploy](scripts/mtm_deploy): deploy latest code 
+
+[mongo_backup](scripts/mongo_backup): backup mongo db data every day.
+

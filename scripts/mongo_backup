@@ -1,0 +1,8 @@
+# /etc/cron.d/mongo_backup: daily dump mtm mongo db data at 00:00
+
+#SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+BACKUP_DIR=/opt/data/backup/mtm_data
+
+#0 0    * * *   root	echo "`date` mongodump" >> /var/log/mongo_backup.log && mkdir -p $BACKUP_DIR && mongodump -h 127.0.0.1 -d test -o $BACKUP_DIR 2>&1 >> /var/log/mongo_backup.log
+0 0    * * *   root	echo "$(date) mongodump to ${BACKUP_DIR}_$(date +\%Y\%m\%d)" >> /var/log/mongo_backup.log && mongodump -h 127.0.0.1 -d test -o ${BACKUP_DIR}_$(date +\%Y\%m\%d) 2>&1 >> /var/log/mongo_backup.log
