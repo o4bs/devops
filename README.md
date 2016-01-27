@@ -1,30 +1,25 @@
 # devops
 Instructions related to the devops.
 
-## Installation
+## [Installation](Installation.md)
 The tools to install at our servers.
 
-See [Installation](Installation.md).
 
-
-## Security
+## [Security](Security.md)
 Some security consideration.
 
-See [Security](Security.md).
 
-
-## Scripts
+## [Scripts](scripts)
 Useful scripts for the setup.
 
-See files under the [scripts](scripts) directory.
 
-## start scripts
-[mongo express](scripts/start_mongo_express.sh): Will start a mongo web UI and listen to http://localhost:8081.
+### start scripts
+* [mongo express](scripts/start_mongo_express.sh): Will start a mongo web UI and listen to http://localhost:8081.
 
 
 ### cron files
 
-Put under /etc/cron.d/
+Put the file under `/etc/cron.d/`.
 
 * [mtm_deploy](scripts/mtm_deploy): deploy latest code 
 * [mongo_backup](scripts/mongo_backup): backup mongo db data every day.
