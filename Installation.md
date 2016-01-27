@@ -44,6 +44,13 @@ docker pull kiyohara/docker-rabbitmq-mqtt
 docker pull nginx
 ```
 
+#### mongo-express
+A web admin ui for mongo db.
+
+```sh
+docker pull knickers/mongo-express:0.29.20
+```
+
 ### jenkins
 CI engine
 ```sh
