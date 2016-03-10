@@ -4,13 +4,15 @@ Instructions related to the devops.
 
 ## Servers
 ### Product env
+*Product server, no one should make change unless allowed from admin.*
+
 Host: [o4bs.com](o4bs.com)
 
-Product server, no one should make change unless allowed from admin.
+The code is under `/opt/data/github/mtm/`.
 
 Currently, the deployed code is from [master](https://github.com/o4bs/mtm/tree/master) branch.
 
-New release should be tested fully under the Dev env, and be deployed manually.
+New release should be tested fully under the Dev env before merging into master branch, and MUST be deployed manually.
 
 ### Dev env
 Host: [test.o4bs.com](test.o4bs.com)
@@ -42,5 +44,5 @@ Useful scripts for the setup.
 Put the file under `/etc/cron.d/`.
 
 * [mtm_deploy](scripts/mtm_deploy): deploy latest code 
-* [mongo_backup](scripts/mongo_backup): backup mongo db data every day.
+* [mongo_backup](scripts/mongo_backup): backup mongo db data to `/opt/data/backup/` every day.
 
