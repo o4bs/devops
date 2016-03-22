@@ -1,0 +1,12 @@
+# /etc/cron.d/rsync_backup: daily backup data at 00:05
+
+#SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+LOG_FILE=/var/log/rsync_backup.log
+BACKUP_DIR=/opt/data/backup/
+REMOTE_HOST=10.44.25.113
+REMOTE_DIR=/opt/data/backup_prod/
+
+5 0    * * *   o4bs     echo "$(date) rsync ${BACKUP_DIR} to {REMOTE_DIR})" >>
+${LOG_FILE} && rsync -avzI ${BACKUP_DIR} ${REMOTE_HOST}:${REMOTE_DIR} 2>&1 >>
+${LOG_FILE}

@@ -45,4 +45,5 @@ Put the file under `/etc/cron.d/`.
 
 * [mtm_deploy](scripts/mtm_deploy): deploy latest code 
 * [mongo_backup](scripts/mongo_backup): backup mongo db data to `/opt/data/backup/` every day.
+* [rsync_backup](scripts/rsync_backup): backup data `/opt/data/backup/` to remote every day.
 
