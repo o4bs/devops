@@ -1,5 +1,5 @@
 # devops
-Instructions related to the devops.
+Instructions related to the devops, and docker related files.
 
 
 ## Servers
